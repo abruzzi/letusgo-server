@@ -10,5 +10,7 @@ group :development, :test do
     gem 'rspec'
     gem 'database_cleaner'
     gem 'shotgun'
+    gem 'capybara'
+    gem 'selenium-webdriver'
   	gem 'tux'
 end
