@@ -13,6 +13,8 @@ class POSApplication < Sinatra::Base
         ActiveRecord::Base.establish_connection(dbconfig['development'])
     end
 
+    I18n.enforce_available_locales = false
+
     configure :test do
         require 'sqlite3'
         ActiveRecord::Base.establish_connection(dbconfig['test'])
